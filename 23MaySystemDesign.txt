@@ -1,0 +1,507 @@
+---------------------------------------( Day-1 )--------------------------------------------------------
+
+1.Introduction of System Design
+ 
+Q. What is a system ?
+-> A system is a set of interconnected component that work together to achieve a specific purpose or goal or task.
+
+Q. What is Design ?
+-> Design is the process of planning , creating and conceiving something whether it is a physically object with a specific purpose .
+
+Q. What is system Design?
+-> System design is the process of creating/ designing the architecture / structure or blue-print along with its interface or UI(User interface) as well as component/module that will contribute in the development of the entire system design accordingly to the clients / stakeholder .
+
+
+Scenario 1 --> I have to create my own home / house 
+
+1.Consult with architecture
+2.Raw material
+3.Blueprint
+4.Analyais 
+5.Consulting to engineer /labour
+6.Budgeting
+
+Scenario 2--> Create a Restaurant
+
+1.Area where to start business 
+2.Consult expert -- Hire architects and chef
+3.plan structure -- Design kitchen , design a seating area ,interior
+4.List Feature -- Dine-in , delivery , menu , third party app .
+5.Gather tools -- Buy stoves ,fridges etc .
+6.Create a budget -- Estimate food , salary cost , management bill , maintains 
+7.ImplementationImplemenation -- Build and run the Restaurant.
+8.Feedback
+
+# Key Area of focus in System Design
+1.Architecture - How component connect and interact .
+2.UI/UX Design - How it is interact with the user .
+3.Modules & integration - what feature are includes and how they talk to each other.
+
+Summary 
+System design = foundation of Software development 
+
+Q .What was the things inside the system Design?
+1. Design must be include all the requirement of the client.
+2. A system design will include the two design
+	2.1 HLD (High level design)
+	2.2 LLD (Low level design)
+3. While we are designing the system we should keep the design in a well structure as well as well organized.
+
+
+Q. What is the important of system design in Software development process ?
+
+--> A system design should ensure or verify that what exactly we are going to design in a system that should deal with the real world issue or real world condition . 
+
+--> it is a very important as well as necessary to design the system based on the requirement that provided by the clients / Stakeholders .
+
+--> A well designed and structure so system is not only reliable it is friendly usable .
+
+--> Cost as well as security are two major factor in software development .
+
+--> Maintenance of the system.
+
+example --> Finacle is the software that most of the back is use .
+
+
+Benefit 
+1.clear Roadmap
+2.Scalability 
+3.Maintain
+4.Cost Efficiency
+5.Security 
+
+#Understanding & Gathering User Requirement
+1. Identification of Clients / Stakeholder -->
+--> it quit important to identify the stackholder/clients that are involve in the development process.
+
+--> As the clients are actively involve in the development process so they can provide their feedback at the earliest .
+
+ 2. Choose Technology Stack
+	Project Size 				Language & Tool
+	-------------				----------------
+	Small 				     Python , Node.js , Firebase ,React
+	
+	medium				     Java/Spring , React , MySQL 
+
+	Large 				     Microservices , AWS ,Kafka , Kubernetes 
+
+3.Managing the Changing user requirement:-
+
+--> In order to manage/welcome the changing requirement coming from the client we have to implement a changes control mechanism so that whatever requirement are getting changed developer can easily fix it or manage it.
+
+--> if we are developing the system design in a proper format along with proper documentation so it is easier
+for developer to change the thing.
+
+4. Conduct Mock Interview , organize workshops/seminar , questionnaire Session
+
+--> Sometime what happen the client are not from the tech-background for that we have to organize this thing so , client can easily understand all the thing.
+
+5. Validate Requirement
+
+--> Conduct 2-3 validation round
+
+--> Use documentation ,screen mockup , and review meeting.
+
+# Type of requirements :-
+
+1.Functional Requirement
+2.Non-Functional Requirement
+
+1.Functional Requirement 
+
+--> The functional requirement are those type of the requirement that the end user particularly uses as the major functionality or feature that the system should preform
+
+--> These are what the system should do .
+
+==> in Restaurant                              ==> In software
+->Show menu					-> Login/Signup
+->Take order					-> Product Search 
+->Accept payment				-> Add to cart
+->Serve Food					-> Notification
+
+Example -> Swiggy --> List of restaurants , login/signup , categories of food , delivery address , location access , payment method/gatway , offer coupon code ,delivery agent , feedback .
+
+Q .Functional requirement of Amazon Prime ?
+
+Answer - add to cart ,subscription ,payment method/gateway ,profile details ,address ,online streaming , offline movies etc .
+
+2.Non-functional Requirement : These are how the system behave .
+
+2.1 Portability --> Use on any devices 
+	Eg- Running app in mobile , in web-pages , iOS etc.
+
+2.2 Security --  protect the user data . 
+	eg - Encryption , 2FA 
+
+2.3 Maintain -- Easy to fix/update 
+
+2.4 Performance best -- Fast & Efficient
+		eg load the pages of website in 2 sec.
+
+2.5 Scalability -- Handle growth 
+	eg - 1K user to 1M user
+
+2.6 Reliability - Work without Failure
+
+	eg:- use-time -99.99% uptime 
+
+2.7 Usability -- User friendly
+
+---------------------------------------------( Day-2 )---------------------------------------------------
+
+# Advantages of System design :
+1.In good system design , it is easy to see how all parts of the system connect , interact and how they are perform together.
+	eg:- chat-software
+		module-1(Login )----> module-2(Chat)-----> module3(logout) 
+
+2.It help teams to plan resource ,time and cost more efficient and reduces the failure of development.
+
+3.An efficient system to maintain and update ,which save time and effort in the long run application.
+
+4.it allows the system to grow smoothly .you can add new feature or handle more user with any major changes.
+
+5. Good design can enhance the system performance ,making it faster and more efficient.
+
+
+# Disadvantage of System Design :
+
+1.The process of system design can be time-consuming ,especially for large and complex system .
+
+2.System design can be expensive ,especially if it involve the significant researcher , prototyping , and testing.
+
+3.System design requires a significant amount of technical expertise , including knowledge of hardware ,software ,database and data structure and algorithm . 
+
+4. Once a system design is completed , it can be difficult to make changes to the design , especially if the design has already been implemented and deployed .
+
+# What is HLD (High-level design)?
+--> A bird's-eye view of the system , showing the major modules , data flow and component interaction without implementation details .
+
+# Component of HLD :
+
+	Component 					Description
+--------------------------------------------------------------------------------------
+1. System Architecture  -------------------------------> Overall System Blueprint
+
+2. Module/Components	-------------------------------> Separated function (Eg: login, logout, sign -in ,payment etc .)
+
+3.DFA (Data flow diagram )-----------------------------> Show how data moves through-out the system.
+
+4.Interface Design ------------------------------------> Define how component interact (API , DB , UI etc. )
+
+--> use diagram ,flowchart ,block layout.
+
+# Purpose of HLD :
+
+1.Help Visualizing major system flow .
+
+2.Technical translation of functional requirements.
+
+3. Enable collaboration between teams .
+
+4. Support decision making for infrastructure and design . 
+
+
+# Characteristic of HLD :-
+
+1.Adaptable to changes :-
+ 
+-> A good system design should support Change Control.
+
+-> This means the architecture is flexible enough to adopt new requirement without redesigning everything.
+
+-> Follow agile principle and knowledge of Version Control .
+
+
+2.Visual-heavy :-
+
+-> The Design include diagram and charts like:-
+	-> DFD (Data flow diagram)
+	-> UML (Unified Modeling language)
+	-> ERD (Entity Relationship Diagram)
+	-> Architecture Diagram .
+
+->Helps developer and stakeholders /clients/user easily understand the system flow.
+
+3. Maps FR(Functional requirement )to Modules :-
+
+-> FR-> Functional Requirements -> What the system must do .
+
+-> These are mapped to respective modules or component.
+	eg : - FR: "User requirement" -> Mapped to " Authentication module "
+
+
+4. Combination of HW + SW Layout .
+
+-> HW - Hardware , SW- Software 
+
+-> HLD Should include both 
+	-> HW ( Server specification , cloud deployment , Storage etc.   )
+	-> SW ( Microservices , APIs .backend/Frontend structure ).
+
+# What is Low level Design ?
+
+-> Detailed blueprint of each and every module , showing inter logic ,class Design and algorithm .
+
+# include inside the LLD
+
+-> UML (Unified modeling Language ).
+-> Classes and sequence Diagram .
+-> Pseudocode & Database Schema .
+
+( LLD -------to--------HLD )
+
+
+#Creating LLD from HLD
+
+	Tool				Use 
+----------------------------------------------------------
+      	ULM 	--------------------->	class/Sequence Diagram etc.
+
+ 	OOPS	--------------------->	Abstraction , Encapsulation , Inheritance etc.
+
+Example :- ATM Machine 
+	1.Check balance - LLD
+	2.debit balance -LLD
+	3.Withdraw Case - HLD
+	4.Print receipt.-LLD
+
+# Difference between HLD and LLD
+
+Criteria	|	      HLD			 	   |	LLD
+----------------|--------------------------------------------------|--------
+Based on 	|	SRS(Software requirement specific )	   |	HLD
+		|
+Audience 	|	Architects , PMs				Developer and tester
+		|
+Focus 		|	System Modules					internal logic of each
+		|
+Approach	|	Top-down					Bottom-up
+		|
+Tools		|	DFD , System diagram 				UML , class Diagram.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+ 
+ 
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
