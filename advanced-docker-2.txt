@@ -1,0 +1,10 @@
+docker run -itd -v /users/ravi/jenkinshome:/var/jenkins_home -p 8080:8080 --name=jen1 --user=jenkins Jenkins/Jenkins:lts
+
+mkdir jenkinshome
+chmod 777 jenkinshome
+
+docker run -itd -p 8080:8080 -v /root/jenkinshome:/var/jenkins_home Jenkins/Jenkins:lts
+
+multi-stage builds
+
+docker-compose -f abc.yml up -d
